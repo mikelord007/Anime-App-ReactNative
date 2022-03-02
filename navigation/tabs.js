@@ -4,14 +4,14 @@ import React from "react";
 // } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { TabIcon } from "../componenets";
-import bookmarkgray from '../assets/icons/bookmargray.png'
+import bookmarkgray from '../assets/icons/details.png'
 import homegreen from '../assets/icons/homegreen.png'
 import homegray from '../assets/icons/homegray.png'
 import searchgreen from '../assets/icons/serachgreen.png'
 import searchgray from '../assets/icons/searchgray.png'
 import settingsgray from '../assets/icons/settingsgray.png'
 import settingsgreen from '../assets/icons/settingsgreen.png'
-import bookmarkgreen from '../assets/icons/bookmarkgreen.png'
+import bookmarkgreen from '../assets/icons/details.png'
 
 import { Home,ResultDetails,Results } from "../screens"
 // import { icons } from "../constants";
