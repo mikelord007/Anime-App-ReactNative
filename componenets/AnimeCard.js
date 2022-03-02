@@ -5,13 +5,13 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 
 
 
-export default function AnimeCard({images, title, genres, rating,navigation}) {
+export default function AnimeCard({images, title, genres, rating,navigation, wholeItem}) {
   if(title.length> 15) title = title.slice(0,15) + '...'
   if(genres.length> 3) genres = genres.slice(0,3)
 
 
   return (
-    <TouchableOpacity activeOpacity={0.5} style={resultsStyle.resultsRow } onPress={()=> {navigation.navigate("Details")}}>
+    <TouchableOpacity activeOpacity={0.5} style={resultsStyle.resultsRow } onPress={()=> {navigation.navigate("Details",{wholeItem})}}>
         <Image source={{uri: images}} style={resultsStyle.imgStyle}/>
         <View style={resultsStyle.detailsView}>
           <Text style={resultsStyle.detailsText}>{title}</Text>

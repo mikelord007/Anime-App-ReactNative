@@ -37,7 +37,7 @@ export default function Results({ navigation,route }) {
         showsVerticalScrollIndicator={false}
         renderItem={(item)=> {
           return( 
-            <AnimeCard  navigation={navigation} genres={item?.item?.genres} images={item?.item?.images.jpg.image_url} title={item?.item?.title_english?item?.item?.title_english: item?.item?.title} rating={item?.item?.score} />
+            <AnimeCard  navigation={navigation} genres={item?.item?.genres} images={item?.item?.images.jpg.image_url} title={item?.item?.title_english?item?.item?.title_english: item?.item?.title} rating={item?.item?.score} wholeItem={item} />
           )
           }}
         />}
